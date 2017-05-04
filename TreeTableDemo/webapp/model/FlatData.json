@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "ID": "DF001",
+      "Text": "Dokumente",
+      "ParentID": "",
+      "Type": "O",
+      "Upload Dokumente" : ""
+    },
+    {
+      "ID": "DS001",
+      "Text": "Dokumente 1",
+      "ParentID": "DF001",
+      "Type": "O",
+      "Upload Dokumente" :""
+    },
+    {
+      "ID": "WF001",
+      "Text": "Web",
+      "ParentID": "",
+      "Type": "S",
+      "Upload Dokumente" :""
+    },
+    {
+      "ID": "WS001",
+      "Text": "Web - Dokumente 1",
+      "ParentID": "WF001",
+      "Type": "S",
+      "Upload Dokumente" :""
+    },
+    {
+      "ID": "AF001",
+      "Text": "Arbeitsvorrat",
+      "ParentID": "",
+      "Type": "S",
+      "Upload Dokumente" :""
+    },
+    {
+      "ID": "AS001",
+      "Text": "Arbeitsvorrat - Dokumente 1",
+      "ParentID": "AF001",
+      "Type": "S",
+      "Upload Dokumente" :""
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.scn.demo.treetableTreeTableDemo.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:table="sap.ui.table" xmlns:u="sap.ui.unified">
+	<App>
+		<pages>
+			<Page title="{i18n>JoinApps Drag and Drop}" class="sapUiSizeCompact">
+				<content>
+					<table:TreeTable id="TreeTable" rows="{path:'nodeModel>/nodeRoot', parameters: {arrayNames:['children']}}" enableSelectAll="false" selectionMode="Single">
+						<table:columns>
+							<table:Column width="13rem">
+								<Label text="{i18n>Hierarchie}"/>
+								<table:template>
+								 <u:FileUploader></u:FileUploader>
+								</table:template>
+							</table:Column>
+						</table:columns>
+					</table:TreeTable>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
