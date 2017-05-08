@@ -4,15 +4,22 @@
 		<pages>
 			<Page title="{i18n>JoinApps Drag and Drop}" class="sapUiSizeCompact">
 				<content>
-					<table:TreeTable id="TreeTable" rows="{path:'nodeModel>/nodeRoot', parameters: {arrayNames:['children']}}" enableSelectAll="false" selectionMode="Single">
+					<table:TreeTable id="TreeTable" rows="{path:'nodeModel>/nodeRoot', parameters: {arrayNames:['children']}}" enableSelectAll="false"
+						selectionMode="Single">
+						
 						<table:columns>
-							<table:Column width="13rem">
+							
+							<table:Column width="20rem">
 								<Label text="{i18n>Hierarchie}"/>
-								<table:template>
-								 <u:FileUploader></u:FileUploader>
-								</table:template>
+								
+									<table:template>
+										<Label text="{nodeModel>text}" />
+									</table:template>
+							
 							</table:Column>
+							
 						</table:columns>
+						
 					</table:TreeTable>
 				</content>
 			</Page>
